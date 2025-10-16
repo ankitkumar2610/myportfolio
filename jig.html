@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student Portfolio</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f5f7fa;
+      color: #333;
+    }
+
+    header {
+      background: linear-gradient(to right, #6a11cb, #2575fc);
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+    }
+
+    header h1 {
+      font-size: 3rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      font-style: italic;
+    }
+
+    nav {
+      background-color: #fff;
+      padding: 10px 20px;
+      text-align: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #2575fc;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: #6a11cb;
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 30px;
+      font-size: 2rem;
+      color: #2575fc;
+    }
+
+    .about, .projects, .contact {
+      text-align: center;
+    }
+
+    .projects-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .project-card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      padding: 20px;
+      width: 300px;
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: translateY(-5px);
+    }
+
+    .project-card h3 {
+      color: #6a11cb;
+    }
+
+    footer {
+      background-color: #f1f1f1;
+      text-align: center;
+      padding: 20px;
+      color: #777;
+    }
+
+    /* Responsive */
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2rem;
+      }
+
+      .project-card {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Ankit kumar</h1>
+    <p>Aspiring Web Developer & Creative Thinker</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about">
+      <p>Hello! I'm Ankit, a Computer Science student passionate about web development and UI design. I love building projects that solve real-world problems.</p>
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <h3>Portfolio Website</h3>
+        <p>A personal website built with HTML, CSS, and JavaScript to showcase my skills.</p>
+      </div>
+      <div class="project-card">
+        <h3>To-Do App</h3>
+        <p>A simple to-do list app using React and Firebase for storing tasks.</p>
+      </div>
+      <div class="project-card">
+        <h3>Weather App</h3>
+        <p>Fetches real-time weather data using an API and displays it beautifully.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact">
+      <p>Email: Ankit kumar@example.com</p>
+      <p>GitHub: github.com/Ankit kumar</p>
+      <p>LinkedIn: linkedin.com/in/Ankit kumar</p>
+    </div>
+  </section>
+
+  <footer>
+    &copy; 2025 Ankit kumar. All rights reserved.
+  </footer>
+
+</body>
+</html>
